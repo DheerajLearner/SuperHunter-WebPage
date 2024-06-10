@@ -1,0 +1,220 @@
+/* header container contains logog of the page and the and navigation abar */
+
+.header-container{
+    margin:1px 5px;
+    padding:5px 10px;
+    width:96.3vw;
+    height:10vh;
+    background:linear-gradient(rgba(255, 1, 1, 0.8), rgb(227, 32, 10, 0.8),rgba(255, 68, 0, 0.5) ,rgb(2, 179, 182));
+    position:relative;
+    box-shadow: 0px 0px 3px 3px rgb(255, 0, 0), 0px 0px 7px 7px rgba(3, 218, 161, 0.346);
+}
+.header-logo{
+    height: 95%;
+    width: 12%;
+    /* border:1px solid black; */
+    display:inline-block;
+}
+.header-logo img{
+    height:100%;
+    width:100%;
+}
+
+/* navigation icons and text and search hase been made here  */
+
+.navigation{
+    /* display:flex; */
+    /* border:1px solid black; */
+    vertical-align: middle;
+    height:85%;
+    width:80%;
+    position:absolute;
+    right:1%;
+    display:inline-block
+}
+.nav-list{
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+    row-gap:20px;
+    justify-content: space-around;
+}
+.nav-list li {
+    height: 3vh;
+}
+.home-icon{
+    font-size:2rem;
+}
+.favourite-div{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.search-div{
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    height: 90%;
+    width:15vw;
+    padding:1px 10px;
+    position:relative;
+    transition: box-shadow 0.3s ease;
+}
+.search-div input{
+    border: 0px solid rgba(0, 0, 0, 0);
+    height:95%;
+    width:10vw;
+    outline: none;
+    background-color: transparent;
+}
+.search-div input::placeholder{
+    color:black
+}
+.search-div:focus-within{
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.5);
+}
+.search-icon{
+    position:absolute;
+    right:2vw;
+    top:1vh
+}
+#character-list {
+    list-style: none;
+    padding: 0;
+    z-index:6;
+    position:relative;
+    display: none;
+  }
+.character-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    z-index:6;
+    height: 1vh !important;
+  }
+
+/* having main body of the divs of the information div  */
+
+.main-container{
+    padding:5px 10px;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    /* height:88vh; */
+    /* column-gap:33px; */
+    row-gap:15px;
+    justify-content: space-between;
+    min-height:3vh;
+}
+
+/* having heroes div for heroes information */
+
+.heroes-div{
+    width:23.5%;
+    height:45vh;
+    /* border:1px solid black; */
+    border-radius:15px;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+    position:relative;
+    transition: 0.35s ease-in-out;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display:flex;
+    flex-direction:column-reverse;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.heroes-div:hover{
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+    height:47.5vh;
+    width:24%;
+}
+.heroes-div p{
+    margin:0px 3px 3px 3px;
+    color: rgba(0, 141, 73, 0.988);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.5rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.03rem;
+}
+.icon-pos{
+    height:5vh;
+    width:3.5vw;
+    position:relative;
+    right:-9vw;
+    /* bottom:40vh; 
+    margin-bottom: 38vh;
+    margin-left:12vw; */
+}
+.icon-setting{
+    font-size: 2.0rem;
+    font-weight: 100;
+    /* margin:0.2vh 0.5vw; */
+    position: absolute;
+    right:0.4vw;
+    top:0.4vh;
+}
+.icon-background{
+    color: red;
+}
+.hidden{
+    display:none !important;
+}
+.remove-button{
+    height:5vh;
+    width:3.5vw;
+    position:relative;
+    right:-9vw;
+}
+
+
+/* main-container replacement */
+
+.main-container-replace{
+    padding:0px 10px;
+    border:1px solid black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    /* height:88vh; */
+    /* column-gap:33px; */
+    row-gap:15px;
+    justify-content: space-between;
+}
+.hero-header-info{
+    height:85vh;
+    width:100%;
+    padding:5px 10px;
+    background-image: url();
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border:2px solid black
+}
+
+.hero-header-name{
+    height:8vh;
+    width:30vw;
+    border:1px solid black;
+    margin-bottom:10vh;
+}
+.hero-description{
+    height:40vh;
+    width:40vw;
+    border:1px solid black;
+    padding: 1vh 0.5vw;
+}
+.hero-description-info{
+    height: 34vh;
+    width:98.5%;
+    border: 1px solid black;
+    padding: 1vh
+}
