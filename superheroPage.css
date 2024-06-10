@@ -38,7 +38,7 @@
     display:flex;
     flex-wrap:wrap;
     row-gap:20px;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 .home-icon{
     font-size:2rem;
